@@ -7,9 +7,9 @@ RUN apt-get -y update
 RUN apt-get -y upgrade
 
 ###  Git Updated version ###
-RUN sudo apt-add-repository ppa:git-core/ppa
-RUN sudo apt-get update
-RUN sudo apt-get install git
+RUN  apt-add-repository ppa:git-core/ppa
+RUN  apt-get update
+RUN  apt-get install git
 
 ###  Nginx 1.10 version ###
 RUN apt-get install -y nginx=1.10.0-0ubuntu0.16.04.4
