@@ -1,7 +1,8 @@
-MAINTAINER TRESELLE
-
 ### Ubuntu:16.04 docker image ####
 FROM ubuntu:16.04
+
+MAINTAINER TRESELLE
+
 RUN apt-get -y update
 RUN apt-get -y upgrade
 
