@@ -3,6 +3,8 @@ FROM ubuntu:16.04
 MAINTAINER TRESELLE
 RUN apt-get -y update
 RUN apt-get -y upgrade
+RUN apt-get install software-properties-common
+
 ### Git Install ###
 RUN apt-add-repository ppa:git-core/ppa
 RUN apt-get update
