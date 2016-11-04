@@ -3,12 +3,12 @@ FROM ubuntu:16.04
 MAINTAINER TRESELLE
 RUN apt-get -y update
 RUN apt-get -y upgrade
-RUN apt-get install software-properties-common
+RUN apt-get -y install software-properties-common
 
 ### Git Install ###
-RUN apt-add-repository ppa:git-core/ppa
-RUN apt-get update
-RUN apt-get install git
+RUN apt-add-repository -y ppa:git-core/ppa
+RUN apt-get -y update
+RUN apt-get -y install git
 ### Nodejs ###
 RUN curl -sL https://deb.nodesource.com/setup_6.x | bash - \
     && apt-get install -y nodejs
